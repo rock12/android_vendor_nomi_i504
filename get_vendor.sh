@@ -48,7 +48,8 @@ AUDIO="/bin/audiocmdservice_atci /lib/libblisrc.so /lib/libspeech_enh_lib.so /li
 /lib/libmtkplayer.so /lib/libvcodecdrv.so /lib/libvcodec_utility.so /lib/libssladp.so /lib/libmhalImageCodec.so /lib/libvcodec_oal.so  /lib/libvcodec_oal.so \
 /lib/libmmprofile_jni.so /lib/libmmprofile.so /lib/libJpgDecPipe.so /lib/libGdmaScalerPipe.so /lib/libSwJpgCodec.so \
 /lib/libMtkOmxAdpcmDec.so /lib/libMtkOmxAlacDec.so /lib/libMtkOmxCore.so /lib/libMtkOmxG711Dec.so /lib/libMtkOmxMp3Dec.so /lib/libMtkOmxVdec.so /lib/libMtkOmxVorbisEnc.so \
-/lib/libMtkOmxAdpcmEnc.so /lib/libMtkOmxApeDec.so /lib/libMtkOmxFlacDec.so /lib/libMtkOmxGsmDec.so /lib/libMtkOmxRawDec.so /lib/libMtkOmxVenc.so"
+/lib/libMtkOmxAdpcmEnc.so /lib/libMtkOmxApeDec.so /lib/libMtkOmxFlacDec.so /lib/libMtkOmxGsmDec.so /lib/libMtkOmxRawDec.so /lib/libMtkOmxVenc.so \
+/lib/libaudiocompensationfilter.so"
 
 CAMERA="/lib/libcam_mmp.so /lib/libcam.utils.so /lib/libfeatureio.so /lib/libcam.metadataprovider.so /lib/libcam.utils.sensorlistener.so \
 /lib/libcam3_app.so /lib/libcam.halsensor.so /lib/libcameracustom.so /lib/hw/camera.mt6580.so /lib/libcam_platform.so /lib/libcam.iopipe_FrmB.so \
