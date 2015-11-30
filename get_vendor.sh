@@ -45,7 +45,6 @@ GL="/lib/egl/libGLESv1_CM_mali.so
 /lib/libui.so 
 /lib/libdrmmtkutil.so 
 /lib/libdrmmtkwhitelist.so 
-/lib/libdrmmtkutil.so 
 /bin/guiext-server 
 /lib/drm/libdrmmtkplugin.so"
 
@@ -61,35 +60,23 @@ GL="/lib/egl/libGLESv1_CM_mali.so
 # then starts the modem CPU. on success starts rest services mdlogger, gsm0710muxd ...
 #
 RIL="/lib/mtk-ril.so
-/lib/librilmtk.so 
+/lib/mtk-rilmd2.so
+/lib/librilmtk.so
+/lib/librilmtkmd2.so 
 /lib/libaed.so 
-/bin/mtkrild 
-/bin/mtkrildmd2 
-/lib/librilmtkmd2.so
 /bin/nvram_daemon 
-/bin/nvram_agent_binder 
+/bin/nvram_agent_binder
 /lib/libnvram.so 
 /lib/libcustom_nvram.so 
 /lib/libnvram_sec.so 
-/lib/mtk-rilmd2.so
 /lib/libhwm.so 
 /lib/libnvram_platform.so 
 /lib/libfile_op.so 
 /lib/libnvram_daemon_callback.so 
 /lib/libmtk_drvb.so
-/bin/gsm0710muxd 
-/bin/gsm0710muxdmd2 
 /bin/ccci_mdinit 
-/bin/aee 
-/bin/mdlogger 
-/lib/libmdloggerrecycle.so 
-/bin/ccci_fsd 
-/lib/libnvramagentclient.so 
-/bin/dm_agent_binder
-/bin/atcid 
-/bin/atci_service 
-/lib/libccci_util.so 
-/bin/md_ctrl"
+/bin/mdlogger
+/bin/ccci_fsd"
 
 AUDIO="/bin/audiocmdservice_atci 
 /lib/libblisrc.so 
@@ -145,7 +132,7 @@ CAMERA="/lib/libcam_mmp.so
 /lib/libcam3_app.so 
 /lib/libcam.halsensor.so
 /lib/libcameracustom.so 
-/lib/hw/camera.mt6580.so 
+/lib/hw/camera.mt6580.so
 /lib/libcam_platform.so 
 /lib/libcam.iopipe_FrmB.so
 /lib/libcam.camshot.so 
@@ -220,7 +207,13 @@ OTHER="/bin/akmd8963
 /lib/libmtcloader.so 
 /bin/permission_check 
 /bin/xlog 
-/lib/libdirect-coredump.so"
+/lib/libdirect-coredump.so
+/lib/hw/power.default.so
+/bin/aee
+/bin/aee_archive
+/bin/aee_core_forwarder
+/bin/aee_dumpstate
+/bin/geomagneticd"
 
 SYSTEM="$FIRMWARE $WIFI $GL $RIL $AUDIO $OTHER $VENDOR $XBIN $CAMERA"
 
